@@ -116,7 +116,14 @@ body {
     font-size: 50%;
   }
   #header {
-    background: url("../img/header-bg-mobile.svg") no-repeat center center/cover;
+    min-height: 100vh;
+    background: radial-gradient(50% 50% at 50% 50%, #052BB3 0%, #001E89 100%);
+  }
+  #header .outer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   #header .right img {
     max-width: 300px;
