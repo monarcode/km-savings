@@ -37,9 +37,6 @@ body {
     position: relative;
     
     .navbar-nav {
-        a:nth-of-type(4){
-            margin-left: auto;
-        }
         a:nth-of-type(1){
             margin-left: auto;
         }
@@ -51,6 +48,30 @@ body {
     background: url('../img/header-bg.svg') no-repeat center center/cover;
     display: flex;
     align-items: center;
+
+    .outer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .left, .right {
+        flex: 1 0 40rem;
+    }
+
+    .left {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .right {
+        align-self: stretch;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
 
     h1 {
         font-size: 6rem;
@@ -92,7 +113,7 @@ body {
 
         .right {
             img {
-                max-width: 30rem;
+                max-width: 300px;
                 height: auto;
             }
         }
